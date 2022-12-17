@@ -8,6 +8,9 @@
   },
   "repository": {
     "type": "module",
+    "bin": {
+      "brain-games": "bin/brain-games.js"
+    },
     "url": "git+https://github.com/NullUndefinedElement/frontend-project-44.git"
   },
   "author": "",
