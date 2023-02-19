@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
 const isEvenTextRule = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -5,6 +6,7 @@ const isEvenTextRule = 'Answer "yes" if the number is even, otherwise answer "no
 const gameRules = (theCorrrectAnswer, enteredResponse, userName, roundPosition) => {
   let result = true;
   if (roundPosition >= 3) {
+    console.log('Correct!');
     console.log(`Congratulations, ${userName}!`);
     return result;
   }
@@ -40,6 +42,5 @@ const evenGame = () => {
 }
 
 evenGame();
-
 
 
