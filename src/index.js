@@ -17,6 +17,14 @@ export const calculator = (operand, randomNum1, randomNum2) => {
   return String(randomNum1 + randomNum2);
 };
 
+export const findGcd = (number1, number2) => {
+  if (number2 > number1) return findGcd(number2, number1);
+  if (!number2) return number1;
+  return findGcd(number2, number1 % number2);
+}
+
+
+
 
 export const gameInit = (theCorrrectAnswer, enteredResponse, userName, roundPosition) => {
   let result = true;
