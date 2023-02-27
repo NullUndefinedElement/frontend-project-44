@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 export const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 export const calculator = (operand, randomNum1, randomNum2) => {
@@ -35,7 +34,7 @@ export const isPrime = (num) => {
   if (num <= 1) return false;
 
   for (let i = 2; i * i <= num; i += 1) {
-    if (num % i == 0) return false;
+    if (num % i === 0) return false;
   }
   return true;
 };
