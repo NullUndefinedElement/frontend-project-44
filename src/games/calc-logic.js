@@ -16,7 +16,7 @@ const calcGame = () => {
         const task = `${randomNum1} ${operand} ${randomNum2}`;
         const response = calculator(operand, randomNum1, randomNum2);
         const theCorrectAnswer = response;
-        const enteredResponse = readlineSync.question(`Question: ${task} \n `);
+        const enteredResponse = readlineSync.question(`Question: ${task}`);
         const result = gameInit(theCorrectAnswer, enteredResponse, userName, roundPosition);
         if (result === false) {
             break;
