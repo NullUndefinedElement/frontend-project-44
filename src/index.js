@@ -49,6 +49,15 @@ export const isPrime = (num) => {
   }
 }
 
+
+export const isEven = (num) => {
+  if (num > 0 && num % 2 === 0) {
+    return true
+  }
+  else { return false }
+}
+
+
 export const gameInit = (theCorrrectAnswer, enteredResponse, userName, roundPosition) => {
   let result = true;
   if (roundPosition >= 3) {
