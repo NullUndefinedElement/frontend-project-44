@@ -24,6 +24,16 @@ export const findGcd = (number1, number2) => {
 }
 
 
+export const initProgression = () => {
+  const progressionArr = [];
+  const startPoint = randomNum(1, 10);
+  const step = randomNum(1, 10);
+  const length = randomNum(5, 10);
+  for (let i = 0; i < length; i += 1) {
+    progressionArr.push(startPoint + step * i);
+  }
+  return progressionArr;
+};
 
 
 export const gameInit = (theCorrrectAnswer, enteredResponse, userName, roundPosition) => {
