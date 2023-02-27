@@ -37,10 +37,14 @@ export const initProgression = () => {
 
 
 export const isPrime = (num) => {
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) return false;
+  if (num <= 1)
+    return false;
+
+  for (i = 2; i * i <= num; i++) {
+    if (num % i == 0)
+      return false;
   }
-  return num > 1;
+  return true;
 }
 
 
