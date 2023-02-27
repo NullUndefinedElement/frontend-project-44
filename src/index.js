@@ -60,7 +60,8 @@ export const gameInit = (theCorrrectAnswer, enteredResponse, userName, roundPosi
     return result;
   } else {
     result = false;
-    console.log(`'${enteredResponse}' is wrong answer ;(. Correct answer was '${theCorrrectAnswer}'. Let's try again, ${userName}!`);
+    console.log(`'${enteredResponse}' is wrong answer ;(. Correct answer was '${theCorrrectAnswer}'.`);
+    console.log(`Let's try again, ${userName}!`);
     return result;
   }
 }
