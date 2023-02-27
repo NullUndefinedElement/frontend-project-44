@@ -10,7 +10,12 @@ const evenGame = () => {
     console.log(isEvenTextRule);
     for (let roundPosition = 1; roundPosition <= 3; roundPosition += 1) {
         const questionNum = randomNum(1, 100);
-        const isEven = (num) => num % 2 === 0;
+        const isEven = (num) => {
+            if ( num % 2 === 0 ) {
+                return true
+            }
+            return false;
+        }
         const theCorrrectAnswer = isEven(questionNum) ? 'yes' : 'no';
         const enteredResponse = readlineSync.question(`Question: ${questionNum} \n `);
         const result = gameInit(theCorrrectAnswer, enteredResponse, userName, roundPosition);
