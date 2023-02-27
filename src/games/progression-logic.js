@@ -15,7 +15,7 @@ const progressionGame = () => {
         const theCorrectAnswer = response;
         progressionNonHidden[hiddenElement] = '..';
         const task = progressionNonHidden.join(' ');
-        const enteredResponse = readlineSync.question(`Question: ${task}`);
+        const enteredResponse = readlineSync.question(`Question: ${task}\n`);
         const result = gameInit(theCorrectAnswer, +enteredResponse, userName, roundPosition);
         if (result === false) {
             break;

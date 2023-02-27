@@ -11,7 +11,7 @@ const primeGame = () => {
     for (let roundPosition = 1; roundPosition <= 3; roundPosition += 1) {
         const questionNum = randomNum(1, 100);
         const theCorrrectAnswer = isPrime(questionNum) ? 'yes' : 'no';
-        const enteredResponse = readlineSync.question(`Question: ${questionNum}`);
+        const enteredResponse = readlineSync.question(`Question: ${questionNum}\n`);
         const result = gameInit(theCorrrectAnswer, enteredResponse, userName, roundPosition);
         if (result === false) {
             break;

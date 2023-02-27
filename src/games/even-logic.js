@@ -17,7 +17,7 @@ const evenGame = () => {
             return false;
         }
         const theCorrrectAnswer = isEven(questionNum) ? 'yes' : 'no';
-        const enteredResponse = readlineSync.question(`Question: ${questionNum}`);
+        const enteredResponse = readlineSync.question(`Question: ${questionNum}\n`);
         const result = gameInit(theCorrrectAnswer, enteredResponse, userName, roundPosition);
         if (result === false) {
             break;

@@ -14,7 +14,7 @@ const gcdGame = () => {
         const task = `${randomNum1} ${randomNum2}`;
         const response = `${findGcd(randomNum1, randomNum2)}`;
         const theCorrectAnswer = response;
-        const enteredResponse = readlineSync.question(`Question: ${task}`);
+        const enteredResponse = readlineSync.question(`Question: ${task}\n`);
         const result = gameInit(theCorrectAnswer, enteredResponse, userName, roundPosition);
         if (result === false) {
             break;
