@@ -50,7 +50,7 @@ export const isPrime = (num) => {
 
 export const gameInit = (theCorrrectAnswer, enteredResponse, userName, roundPosition) => {
   let result = true;
-  if (roundPosition >= 3) {
+  if (roundPosition >= 3 && theCorrrectAnswer === enteredResponse) {
     console.log('Correct!');
     console.log(`Congratulations, ${userName}!`);
     return result;
