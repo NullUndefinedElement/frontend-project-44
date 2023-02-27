@@ -10,7 +10,7 @@ const progressionGame = () => {
     console.log(progressionTextRule);
     for (let roundPosition = 1; roundPosition <= 3; roundPosition += 1) {
         const progressionNonHidden = initProgression();
-        let hiddenElement = randomNum(0, progressionNonHidden.length - 1);        
+        let hiddenElement = randomNum(0, progressionNonHidden.length - 1);
         const response = progressionNonHidden[hiddenElement];
         const theCorrectAnswer = response;
         progressionNonHidden[hiddenElement] = '..';
@@ -20,7 +20,7 @@ const progressionGame = () => {
         if (result === false) {
             break;
         }
-    }  
+    }
 }
 
 export default progressionGame; 

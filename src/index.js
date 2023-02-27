@@ -36,6 +36,19 @@ export const initProgression = () => {
 };
 
 
+export const isPrime = (num) => {
+  if (num > 1) {
+    for (let i = 2; i < num; i++) {
+      if (num % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  } else {
+    return false;
+  }
+}
+
 export const gameInit = (theCorrrectAnswer, enteredResponse, userName, roundPosition) => {
   let result = true;
   if (roundPosition >= 3) {
