@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-      "url": "git+https://github.com/NullUndefinedElement/frontend-project-44.git"
+    "url": "git+https://github.com/NullUndefinedElement/frontend-project-44.git"
   },
   "type": "module",
   "bin": {
@@ -17,7 +17,7 @@
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
-     },
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
