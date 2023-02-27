@@ -49,6 +49,7 @@ export const isPrime = (num) => {
   }
 }
 
+
 export const gameInit = (theCorrrectAnswer, enteredResponse, userName, roundPosition) => {
   let result = true;
   if (roundPosition >= 3) {
