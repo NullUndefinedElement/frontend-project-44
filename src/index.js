@@ -52,7 +52,7 @@ export const isEven = (num) => {
   if (num === 0) {
     return false
   }
-  if (number % 2 == 0) {
+  if (num % 2 == 0) {
     return true;
   }
   else {
