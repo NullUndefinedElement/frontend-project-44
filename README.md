@@ -1,5 +1,3 @@
-### Hexlet tests and linter status
-
 Presented a collection of 5 console math games, each of which invites the user to answer 3 questions, the game victory counts only in case of 3 correct answers in a row. Don't get upset if you fail, just restart the game and show what you're worth!
 
 How to install: 1. Make sure you have installed Node.js version 13 or higher.
@@ -25,7 +23,7 @@ How to install: 1. Make sure you have installed Node.js version 13 or higher.
 
                 6. You always can stop the game by pressing "ctrl + z", but do you wanna lose?)
 
-
+### Hexlet tests and linter status
 [![Actions Status](https://github.com/NullUndefinedElement/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/NullUndefinedElement/frontend-project-44/actions)
 
 <a href="https://codeclimate.com/github/NullUndefinedElement/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6ae3c0cf0d3c7bb3e756/maintainability" /></a>
